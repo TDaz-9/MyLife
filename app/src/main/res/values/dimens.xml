@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dilog_identitychange_height">250dp</dimen>
+    <dimen name="dilog_identitychange_width">200dp</dimen>
+
+    <dimen name="easy_dilog_identitychange_height">100dp</dimen>
+    <dimen name="easy_dilog_identitychange_width">200dp</dimen>
+
+    <dimen name="listview_size">25sp</dimen>
+
+    <dimen name="title_size">24sp</dimen>
+</resources>
