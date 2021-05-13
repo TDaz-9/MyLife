@@ -85,7 +85,7 @@ public class LoginActivity extends Activity {
         });
 
         // 侧边栏点击事件(侧边栏滑出  底部不响应事件)
-        drawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
+        drawerLayout.addDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
 
@@ -94,7 +94,6 @@ public class LoginActivity extends Activity {
             @Override
             public void onDrawerOpened(View drawerView) {
                 drawerView.setClickable(true);
-
             }
 
             @Override
