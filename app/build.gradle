@@ -13,8 +13,11 @@ android {
     }
 
 
-    sourceSets.main {
-        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
     }
 
     buildTypes {
@@ -38,4 +41,6 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.7.5'
     compile 'com.squareup.okio:okio:1.13.0'
     compile 'de.greenrobot:eventbus:3.0.0-beta1'
+
+
 }

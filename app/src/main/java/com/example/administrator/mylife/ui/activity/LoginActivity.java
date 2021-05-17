@@ -13,6 +13,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.administrator.mylife.ImageActivity;
 import com.example.administrator.mylife.MainActivity;
 import com.example.administrator.mylife.R;
 import com.example.administrator.mylife.adapter.HomePageAdapter;
