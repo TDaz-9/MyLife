@@ -77,11 +77,18 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         android:layout_gravity="center">
+        <Button
+            android:id="@+id/image_show_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuanjiao"
+            android:text="拍照上传"/>
 
         <Button
             android:id="@+id/hfive_btn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/yuanjiao"
             android:text="扫描码"/>
 

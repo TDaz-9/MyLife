@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.administrator.mylife.R;
@@ -39,6 +41,57 @@ public class TestEventBusActivity extends Activity implements View.OnClickListen
         button1.setOnClickListener(this);
 
         tv = (TextView) findViewById(R.id.message_eventbus);
+
+        final RadioButton r1 = (RadioButton) findViewById(R.id.one_radio);
+        final RadioButton r2 = (RadioButton) findViewById(R.id.two_radio);
+        final RadioButton r3 = (RadioButton) findViewById(R.id.third_radio);
+        final RadioButton r4 = (RadioButton) findViewById(R.id.four_radio);
+
+        r1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    r2.setChecked(false);
+                    r3.setChecked(false);
+                    r4.setChecked(false);
+                }
+            }
+        });
+
+        r2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    r1.setChecked(false);
+                    r3.setChecked(false);
+                    r4.setChecked(false);
+                }
+            }
+        });
+
+        r3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    r1.setChecked(false);
+                    r2.setChecked(false);
+                    r4.setChecked(false);
+                }
+            }
+        });
+
+        r4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    r1.setChecked(false);
+                    r2.setChecked(false);
+                    r3.setChecked(false);
+                }
+            }
+        });
+
+
 
     }
 

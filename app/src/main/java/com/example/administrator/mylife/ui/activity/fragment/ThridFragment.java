@@ -13,7 +13,7 @@ public class ThridFragment extends Fragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		View v = inflater.inflate(R.layout.layout_thrid, container, false);
+		View v = inflater.inflate(R.layout.activity_flight, container, false);
 		return v;
 	}
 	

@@ -2,13 +2,13 @@ package com.example.administrator.mylife;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.administrator.mylife.tool.NavBar;
+import com.example.administrator.mylife.ui.activity.ImageShowActivity;
 import com.example.administrator.mylife.ui.activity.TestEventBusActivity;
 import com.example.administrator.mylife.ui.activity.TestFragmentActivity;
 import com.example.administrator.mylife.ui.activity.TestListActivity;
@@ -52,6 +52,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // EventBus使用
         Button eventBusBtn = (Button) findViewById(R.id.even_bus);
         eventBusBtn.setOnClickListener(this);
+
+        // 拍照上传
+        Button imageBtn = (Button) findViewById(R.id.image_show_btn);
+        imageBtn.setOnClickListener(this);
 
         // 测试fragment
         fragmentBtn = (Button) findViewById(R.id.fragment_btn);
@@ -115,6 +119,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.even_bus:
                 Intent intentE = new Intent(this, TestEventBusActivity.class);
                 startActivity(intentE);
+                break;
+
+            // 拍照上传
+            case R.id.image_show_btn:
+                Intent intentImage = new Intent(this, ImageShowActivity.class);
+                startActivity(intentImage);
                 break;
 
             default:
