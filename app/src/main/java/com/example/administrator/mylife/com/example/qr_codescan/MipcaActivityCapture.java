@@ -123,7 +123,8 @@ public class MipcaActivityCapture extends Activity implements Callback {
 			Intent resultIntent = new Intent();
 			Bundle bundle = new Bundle();
 			bundle.putString("result", resultString);
-			bundle.putParcelable("bitmap", barcode);
+			// 取消掉扫描图片的传递
+//			bundle.putParcelable("bitmap", barcode);
 			resultIntent.putExtras(bundle);
 			this.setResult(RESULT_OK, resultIntent);
 		}

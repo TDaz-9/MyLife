@@ -1,104 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.administrator.mylife.MainActivity">
-    <include layout="@layout/navbar"/>
+    android:background="#ffffff"
+     >
+     
+        <RelativeLayout
+        android:id="@+id/rl_pdf_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/iv_pdf_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_video_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pdf_center"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/iv_pdf_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/videolist_menu" />
+    </RelativeLayout>
+    
+        <EditText 
+            android:id="@+id/et_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入内容"
+            android:layout_below="@id/rl_pdf_top"
+            />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:id="@+id/dialog_btn"
-            android:layout_width="100dp"
+        android:text="你好吗 我和那红啊"
+        android:layout_below="@+id/et_pdf"/>
+        
+        <Button 
+            android:id="@+id/btn_pdf"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/yuanjiao"
-            android:text="dialog"/>
+            android:text="生成PDF"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+        
+        
 
-        <Button
-            android:id="@+id/easy_dialog_btn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/yuanjiao"
-            android:text="easydialog"/>
-
-        <Button
-            android:id="@+id/list_view_btn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/yuanjiao"
-            android:text="listview"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <Button
-            android:id="@+id/fragment_btn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/yuanjiao"
-            android:text="fragment"/>
-
-        <Button
-            android:id="@+id/viewpager_fragment"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/yuanjiao"
-            android:text="viewpager"/>
-
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/yuanjiao"
-            android:text="list"/>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <Button
-            android:id="@+id/image_show_btn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/yuanjiao"
-            android:text="拍照上传"/>
-
-        <Button
-            android:id="@+id/hfive_btn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/yuanjiao"
-            android:text="扫描码"/>
-
-        <Button
-            android:id="@+id/even_bus"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/yuanjiao"
-            android:layout_marginLeft="20dp"
-            android:text="eventbus"/>
-
-    </LinearLayout>
-</LinearLayout>
+</RelativeLayout>

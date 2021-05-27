@@ -14,4 +14,9 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="dialog_ocr_result">
+        <item name="android:windowEnterAnimation">@anim/open_ocr_result</item>
+        <item name="android:windowExitAnimation">@anim/close_ocr_result</item>
+    </style>
+
 </resources>

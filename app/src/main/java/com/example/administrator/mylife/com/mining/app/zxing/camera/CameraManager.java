@@ -38,10 +38,14 @@ public final class CameraManager {
 
   private static final String TAG = CameraManager.class.getSimpleName();
 
-  private static final int MIN_FRAME_WIDTH = 240;
-  private static final int MIN_FRAME_HEIGHT = 240;
-  private static final int MAX_FRAME_WIDTH = 480;
-  private static final int MAX_FRAME_HEIGHT = 360;
+//  private static final int MIN_FRAME_WIDTH = 240;
+//  private static final int MIN_FRAME_HEIGHT = 240;
+//  private static final int MAX_FRAME_WIDTH = 480;
+//  private static final int MAX_FRAME_HEIGHT = 360;
+private static final int MIN_FRAME_WIDTH = 600;
+  private static final int MIN_FRAME_HEIGHT = 600;
+  private static final int MAX_FRAME_WIDTH = 880;
+  private static final int MAX_FRAME_HEIGHT = 760;
 
   private static CameraManager cameraManager;
 
@@ -224,7 +228,7 @@ public final class CameraManager {
       int width = screenResolution.x * 3 / 4;
       if (width < MIN_FRAME_WIDTH) {
         width = MIN_FRAME_WIDTH;
-      } else if (width > MAX_FRAME_WIDTH) {
+       } else if (width > MAX_FRAME_WIDTH) {
         width = MAX_FRAME_WIDTH;
       }
       int height = screenResolution.y * 3 / 4;
