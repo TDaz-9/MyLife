@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.example.administrator.mylife.tool.NavBar;
 import com.example.administrator.mylife.ui.activity.ImageShowActivity;
+import com.example.administrator.mylife.ui.activity.MusicActivity;
+import com.example.administrator.mylife.ui.activity.RecyclerViewTest;
 import com.example.administrator.mylife.ui.activity.TestEventBusActivity;
 import com.example.administrator.mylife.ui.activity.TestFragmentActivity;
 import com.example.administrator.mylife.ui.activity.TestListActivity;
@@ -22,6 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button fragmentBtn;
     private Button viewPagerFragmentBtn;
     private Button h5Button;
+    private Button musicButton;
     private CustomDialog errorDialog;
     private CustomDialog easyDialog;
 
@@ -56,6 +59,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // 拍照上传
         Button imageBtn = (Button) findViewById(R.id.image_show_btn);
         imageBtn.setOnClickListener(this);
+
+        // 音乐播放
+        musicButton = (Button) findViewById(R.id.music_btn);
+        musicButton.setOnClickListener(this);
 
         // 测试fragment
         fragmentBtn = (Button) findViewById(R.id.fragment_btn);
@@ -95,7 +102,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.list_view_btn:
-                Intent intentList = new Intent(this, TestListActivity.class);
+                Intent intentList = new Intent(this, RecyclerViewTest.class);
                 startActivity(intentList);
                 break;
 
@@ -126,6 +133,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Intent intentImage = new Intent(this, ImageShowActivity.class);
                 startActivity(intentImage);
                 break;
+
+            // 音乐
+            case R.id.music_btn:
+                Intent intentMusic = new Intent(this, MusicActivity.class);
+                startActivity(intentMusic);
 
             default:
                 break;

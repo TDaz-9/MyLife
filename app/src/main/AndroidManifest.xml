@@ -81,6 +81,8 @@
         <activity android:name=".ui.activity.TestEventBusThridActivity"/>
 
         <activity android:name=".ui.activity.ImageShowActivity"/>
+        <activity android:name=".ui.activity.RecyclerViewTest"/>
+        <activity android:name=".ui.activity.MusicActivity"/>
 
 
     </application>

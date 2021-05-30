@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.content.FileProvider;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -27,6 +29,7 @@ import java.io.IOException;
 public class ImageShowActivity extends Activity{
     private ImageView showImage;
     private Button tackBtn;
+    private WebView webView;
 
     public static final int TAKE_PHOTO = 1;
     private Uri imageUri;
@@ -44,6 +47,11 @@ public class ImageShowActivity extends Activity{
 
         showImage = (ImageView) findViewById(R.id.image_show_iv);
         tackBtn = (Button) findViewById(R.id.take_photo_btn);
+        webView = (WebView) findViewById(R.id.webview_btn);
+
+        WebSettings settings = webView.getSettings();
+        settings.setJavaScriptEnabled(true);
+        webView.loadUrl("http://192.168.1.69:8080/xxx/mobile/main/tasks.action");
 
         tackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
