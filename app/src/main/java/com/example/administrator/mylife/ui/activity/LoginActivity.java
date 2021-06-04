@@ -74,6 +74,12 @@ public class LoginActivity extends Activity {
         NavBar navBar = new NavBar(this);
         navBar.hideLeft();
         navBar.setTitle("首页");
+        navBar.getRightImageView().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         GridView gridView = (GridView) findViewById(R.id.grid_view);
         TextView newsTv = (TextView) findViewById(R.id.news_tv);

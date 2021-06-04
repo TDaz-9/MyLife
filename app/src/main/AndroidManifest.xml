@@ -22,6 +22,11 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
 
+    <!--获取手机号码-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+
+
     <!--扫描二维码-->
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -84,6 +89,8 @@
         <activity android:name=".ui.activity.RecyclerViewTest"/>
         <activity android:name=".ui.activity.MusicActivity"/>
 
+        <activity android:name=".ui.activity.studyGlide.GlideActivity"/>
+        <activity android:name=".ui.activity.phone.GetPhoneActivity"/>
 
     </application>
 

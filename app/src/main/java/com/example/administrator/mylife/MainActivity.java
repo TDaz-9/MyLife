@@ -15,7 +15,12 @@ import com.example.administrator.mylife.ui.activity.TestEventBusActivity;
 import com.example.administrator.mylife.ui.activity.TestFragmentActivity;
 import com.example.administrator.mylife.ui.activity.TestListActivity;
 import com.example.administrator.mylife.ui.activity.ViewPagerFragmentActivity;
+import com.example.administrator.mylife.ui.activity.phone.GetPhoneActivity;
+import com.example.administrator.mylife.ui.activity.studyGlide.GlideActivity;
 import com.example.administrator.mylife.util.CustomDialog;
+
+import static com.example.administrator.mylife.R.id.caiming_et;
+import static com.example.administrator.mylife.R.id.glide_btn;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private Button dialogBtn;
@@ -25,6 +30,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button viewPagerFragmentBtn;
     private Button h5Button;
     private Button musicButton;
+    private Button getPhone;
     private CustomDialog errorDialog;
     private CustomDialog easyDialog;
 
@@ -60,6 +66,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Button imageBtn = (Button) findViewById(R.id.image_show_btn);
         imageBtn.setOnClickListener(this);
 
+        // 获取手机号
+        getPhone = (Button) findViewById(R.id.getphone);
+        getPhone.setOnClickListener(this);
+
         // 音乐播放
         musicButton = (Button) findViewById(R.id.music_btn);
         musicButton.setOnClickListener(this);
@@ -69,6 +79,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         fragmentBtn.setOnClickListener(this);
         viewPagerFragmentBtn = (Button) findViewById(R.id.viewpager_fragment);
         viewPagerFragmentBtn.setOnClickListener(this);
+
+        // glide学习
+        Button glideBtn = (Button) findViewById(glide_btn);
+        glideBtn.setOnClickListener(this);
     }
 
     @Override
@@ -138,6 +152,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.music_btn:
                 Intent intentMusic = new Intent(this, MusicActivity.class);
                 startActivity(intentMusic);
+                break;
+
+            // Glide
+            case R.id.glide_btn:
+                Intent intentGlide = new Intent(this, GlideActivity.class);
+                startActivity(intentGlide);
+                break;
+
+            // 获取手机内容权限
+            case R.id.getphone:
+                Intent intentPhone = new Intent(this, GetPhoneActivity.class);
+                startActivity(intentPhone);
+                break;
 
             default:
                 break;

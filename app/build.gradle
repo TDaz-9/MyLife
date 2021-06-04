@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.example.administrator.mylife"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -43,4 +43,11 @@ dependencies {
     compile 'com.squareup.okio:okio:1.13.0'
     compile 'de.greenrobot:eventbus:3.0.0-beta1'
     compile files('libs/iTextpdf.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+    compile 'com.github.yalantis:Side-Menu.Android:1.0.1'
 }
