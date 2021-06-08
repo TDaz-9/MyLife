@@ -136,11 +136,12 @@
                     android:text="获取手机内容" />
 
                 <Button
+                    android:id="@+id/wx_btn"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/yuanjiao"
-                    android:text="未开发" />
+                    android:text="微信" />
 
             </LinearLayout>
         </LinearLayout>

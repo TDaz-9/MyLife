@@ -17,6 +17,7 @@ import com.example.administrator.mylife.ui.activity.TestListActivity;
 import com.example.administrator.mylife.ui.activity.ViewPagerFragmentActivity;
 import com.example.administrator.mylife.ui.activity.phone.GetPhoneActivity;
 import com.example.administrator.mylife.ui.activity.studyGlide.GlideActivity;
+import com.example.administrator.mylife.ui.activity.wxapi.WXEntryActivity;
 import com.example.administrator.mylife.util.CustomDialog;
 
 import static com.example.administrator.mylife.R.id.caiming_et;
@@ -31,6 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button h5Button;
     private Button musicButton;
     private Button getPhone;
+    private Button wxBtn;
     private CustomDialog errorDialog;
     private CustomDialog easyDialog;
 
@@ -79,6 +81,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         fragmentBtn.setOnClickListener(this);
         viewPagerFragmentBtn = (Button) findViewById(R.id.viewpager_fragment);
         viewPagerFragmentBtn.setOnClickListener(this);
+
+        // 微信开发
+        wxBtn = (Button) findViewById(R.id.wx_btn);
+        wxBtn.setOnClickListener(this);
 
         // glide学习
         Button glideBtn = (Button) findViewById(glide_btn);
@@ -164,6 +170,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.getphone:
                 Intent intentPhone = new Intent(this, GetPhoneActivity.class);
                 startActivity(intentPhone);
+                break;
+
+            // 微信学习
+            case R.id.wx_btn:
+                Intent intentWx = new Intent(this, WXEntryActivity.class);
+                startActivity(intentWx);
                 break;
 
             default:
