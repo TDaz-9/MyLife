@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.administrator.mylife.tool.NavBar;
 import com.example.administrator.mylife.ui.activity.ImageShowActivity;
+import com.example.administrator.mylife.ui.activity.LuYinActivity;
 import com.example.administrator.mylife.ui.activity.MusicActivity;
 import com.example.administrator.mylife.ui.activity.RecyclerViewTest;
 import com.example.administrator.mylife.ui.activity.TestEventBusActivity;
@@ -22,6 +23,7 @@ import com.example.administrator.mylife.util.CustomDialog;
 
 import static com.example.administrator.mylife.R.id.caiming_et;
 import static com.example.administrator.mylife.R.id.glide_btn;
+import static com.example.administrator.mylife.R.id.start;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private Button dialogBtn;
@@ -33,6 +35,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button musicButton;
     private Button getPhone;
     private Button wxBtn;
+    private Button lyBtn;
     private CustomDialog errorDialog;
     private CustomDialog easyDialog;
 
@@ -85,6 +88,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // 微信开发
         wxBtn = (Button) findViewById(R.id.wx_btn);
         wxBtn.setOnClickListener(this);
+
+        // 录音
+        lyBtn = (Button) findViewById(R.id.ly_btn);
+        lyBtn.setOnClickListener(this);
 
         // glide学习
         Button glideBtn = (Button) findViewById(glide_btn);
@@ -177,6 +184,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Intent intentWx = new Intent(this, WXEntryActivity.class);
                 startActivity(intentWx);
                 break;
+
+            // 录制音频
+            case R.id.ly_btn:
+                Intent intentLy = new Intent(this, LuYinActivity.class);
+                startActivity(intentLy);
 
             default:
                 break;

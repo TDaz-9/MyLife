@@ -31,4 +31,7 @@
     <string name="close">关闭</string>
     <string name="ocr_look_pdf">查看PDF文件</string>
 
+    <string name="go">正在录制........</string>
+    <string name="start">按住说话</string>
+
 </resources>

@@ -12,106 +12,107 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/dialog_btn"
-                android:layout_width="100dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/yuanjiao"
-                android:text="dialog" />
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/easy_dialog_btn"
-                android:layout_width="100dp"
+                <Button
+                    android:id="@+id/dialog_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuanjiao"
+                    android:text="dialog" />
+
+                <Button
+                    android:id="@+id/easy_dialog_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="easydialog" />
+
+                <Button
+                    android:id="@+id/list_view_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="listview" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/yuanjiao"
-                android:text="easydialog" />
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/list_view_btn"
-                android:layout_width="100dp"
+                <Button
+                    android:id="@+id/fragment_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuanjiao"
+                    android:text="fragment" />
+
+                <Button
+                    android:id="@+id/viewpager_fragment"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="viewpager" />
+
+                <Button
+                    android:id="@+id/music_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="音乐" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/yuanjiao"
-                android:text="listview" />
-        </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/image_show_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuanjiao"
+                    android:text="拍照上传" />
 
-            <Button
-                android:id="@+id/fragment_btn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/yuanjiao"
-                android:text="fragment" />
+                <Button
+                    android:id="@+id/hfive_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="扫描码" />
 
-            <Button
-                android:id="@+id/viewpager_fragment"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/yuanjiao"
-                android:text="viewpager" />
+                <Button
+                    android:id="@+id/even_bus"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="eventbus" />
 
-            <Button
-                android:id="@+id/music_btn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/yuanjiao"
-                android:text="音乐" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/image_show_btn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/yuanjiao"
-                android:text="拍照上传" />
-
-            <Button
-                android:id="@+id/hfive_btn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/yuanjiao"
-                android:text="扫描码" />
-
-            <Button
-                android:id="@+id/even_bus"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/yuanjiao"
-                android:text="eventbus" />
-
-        </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -142,6 +143,23 @@
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/yuanjiao"
                     android:text="微信" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/ly_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yuanjiao"
+                    android:text="录音" />
 
             </LinearLayout>
         </LinearLayout>
